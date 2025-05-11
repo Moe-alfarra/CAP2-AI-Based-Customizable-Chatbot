@@ -1,0 +1,274 @@
+/* src/css/Settings.css */
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--space-6);
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.settings-wrapper {
+  display: flex;
+  background-color: var(--surface-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: var(--shadow-lg);
+  margin-top: var(--space-8);
+}
+
+.settings-sidebar {
+  width: 240px;
+  background: var(--secondary-color);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--border-color);
+}
+
+.settings-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+  color: var(--text-color);
+}
+
+.settings-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-tab {
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-2);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.tab-icon {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.settings-tab:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  transform: translateX(3px);
+}
+
+.settings-tab.active {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.logout-button {
+  margin-top: var(--space-8);
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: #f1f5f9;
+  color: var(--text-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #e2e8f0;
+}
+
+.settings-content {
+  flex: 1;
+  padding: var(--space-8);
+}
+
+.tab-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--space-6);
+  color: var(--text-color);
+}
+
+.tab-content {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.settings-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.settings-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.settings-button.secondary {
+  background-color: #f1f5f9;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.settings-button.secondary:hover {
+  background-color: #e2e8f0;
+}
+
+.settings-button.danger {
+  background-color: white;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.settings-button.danger:hover {
+  background-color: #fef2f2;
+}
+
+.settings-message {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.settings-message.success {
+  background-color: #ecfdf5;
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.settings-message.error {
+  background-color: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.character-preview {
+  margin: var(--space-4) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.character-image {
+  width: 80px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.password-section {
+  margin-top: var(--space-6);
+  padding: var(--space-6);
+  background-color: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.button-group {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.danger-zone {
+  margin-top: var(--space-8);
+  padding: var(--space-4);
+  background-color: #fef2f2;
+  border-radius: var(--radius-md);
+  border: 1px solid #fecaca;
+}
+
+.danger-zone h3 {
+  color: #ef4444;
+  margin-bottom: var(--space-4);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.current-customization {
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background-color: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .settings-wrapper {
+    flex-direction: column;
+  }
+  
+  .settings-sidebar {
+    width: 100%;
+    padding: var(--space-4);
+  }
+  
+  .settings-title {
+    margin-bottom: var(--space-4);
+  }
+  
+  .settings-tab {
+    padding: var(--space-2) var(--space-3);
+  }
+  
+  .settings-content {
+    padding: var(--space-4);
+  }
+}
