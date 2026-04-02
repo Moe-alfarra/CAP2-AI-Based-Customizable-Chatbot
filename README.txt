@@ -1,5 +1,6 @@
 A customizable AI-powered chatbot web application with personalized bot appearances and conversation history.
 
+Installation & Demo Video: https://youtu.be/b97TBuynyEY
 
 ## To access the project directly instead of running it locally:
 
